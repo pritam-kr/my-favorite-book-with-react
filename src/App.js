@@ -91,7 +91,7 @@ export default function App() {
           My favorite books, you can also checkout...
         </p>
         <div className="btn-container">
-          {Object.keys(bookListDB).map((genre) => (
+          {booksList.map((genre) => (
             <button
               className="btn-books"
               onClick={() => bookClickHandler(genre)}
