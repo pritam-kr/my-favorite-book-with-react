@@ -1,2 +1,2 @@
-# my-favorite-book-with-react
+# book-recommendation-app
 Created with CodeSandbox
