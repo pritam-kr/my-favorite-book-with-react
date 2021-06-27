@@ -78,7 +78,13 @@ export default function App() {
       <div className="books-container">
         <h1 className="headings">
           {" "}
-          <span>📚</span> Best Books
+          <span role="img" aria-label="">
+            📚
+          </span>{" "}
+          Best Books{" "}
+          <span role="img" aria-label="">
+            📚
+          </span>
         </h1>
         <p style={{ margin: "10px 0 10px 0" }}>
           {" "}
