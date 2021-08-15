@@ -74,46 +74,103 @@ export default function App() {
     setDataBase(genre);
   }
   return (
-    <div className="container">
-      <div className="books-container">
-        <h1 className="headings">
-          {" "}
-          <span role="img" aria-label="">
-            📚
-          </span>{" "}
-          Best Books{" "}
-          <span role="img" aria-label="">
-            📚
-          </span>
-        </h1>
-        <p style={{ margin: "10px 0 10px 0" }}>
-          {" "}
-          My favorite books, you can also checkout...
-        </p>
-        <div className="btn-container">
-          {booksList.map((genre) => (
-            <button
-              className="btn-books"
-              onClick={() => bookClickHandler(genre)}
-            >
-              {genre}
-            </button>
-          ))}
-        </div>
-
-        <div className="my-books-container">
-          <ul style={{ paddingInlineStart: "0" }}>
-            {bookListDB[dataBase].map((book) => (
-              <li key={book.name}>
-                {" "}
-                <div className="book-name"> {book.name} </div>
-                <div className="author"> By {book.author} </div>
-                <div> {book.rating} </div>
-              </li>
+    <>
+      <div className="container">
+        <div className="books-container">
+          <h1 className="headings">
+            {" "}
+            <span role="img" aria-label="">
+              📚
+            </span>{" "}
+            Best Books{" "}
+            <span role="img" aria-label="">
+              📚
+            </span>
+          </h1>
+          <p style={{ margin: "10px 0 10px 0" }}>
+            {" "}
+            My favorite books, you can also checkout...
+          </p>
+          <div className="btn-container">
+            {booksList.map((genre) => (
+              <button
+                className="btn-books"
+                onClick={() => bookClickHandler(genre)}
+              >
+                {genre}
+              </button>
             ))}
-          </ul>
+          </div>
+
+          <div className="my-books-container">
+            <ul style={{ paddingInlineStart: "0" }}>
+              {bookListDB[dataBase].map((book) => (
+                <li key={book.name}>
+                  {" "}
+                  <div className="book-name"> {book.name} </div>
+                  <div className="author"> By {book.author} </div>
+                  <div> {book.rating} </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+      <footer>
+        <ul>
+          <li>
+            <a
+              href="https://neogcamp-portfolio-of-pritam.netlify.app/index.html"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fas fa-globe-asia"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/pritam-kr/my-favorite-book-with-react"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.instagram.com/pritam_kr30/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.linkedin.com/in/pritam-kumar-0ab3431bb/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://twitter.com/Pritamkr_"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+
+        <p>Code By Pritam Kumar</p>
+      </footer>
+    </>
   );
 }

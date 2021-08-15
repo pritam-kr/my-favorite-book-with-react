@@ -63,3 +63,15 @@ body {
 .author {
   margin: 5px 0;
 }
+footer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1.3rem;
+}
