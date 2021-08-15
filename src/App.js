@@ -124,7 +124,7 @@ export default function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fas fa-globe-asia"></i>
+              <i className="fas fa-globe-asia"></i>
             </a>
           </li>
 
@@ -134,7 +134,7 @@ export default function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </a>
           </li>
 
@@ -144,7 +144,7 @@ export default function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fab fa-instagram"></i>
+              <i className="fab fa-instagram"></i>
             </a>
           </li>
 
@@ -154,7 +154,7 @@ export default function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fab fa-linkedin-in"></i>
+              <i className="fab fa-linkedin-in"></i>
             </a>
           </li>
 
@@ -164,7 +164,7 @@ export default function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-twitter"></i>
             </a>
           </li>
         </ul>
